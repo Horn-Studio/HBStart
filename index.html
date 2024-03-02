@@ -6,7 +6,7 @@
     <meta name="MobileOptimized" content="320">
     <meta name="HandheldFriendly" content="True">
     <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="keywords" content="Horn.Browser主页">
+    <meta name="keywords" content="Horn.Search">
     <meta name="description" content="极简体验">
 
     
@@ -27,7 +27,7 @@
     <script src="./Browser起始页_files/index.js.下载"></script>
     <script>
 
-        var search_e_def = "https://m.bing.com/search?q=%s";
+        var search_e_def = "https://bing.com/search?q=%s";
         //var search_e_def = "https://m.baidu.com/s?wd=%s";
 	    var search_e_url = search_e_def;
 	    
@@ -83,7 +83,7 @@
 	        for (var i = 0, len = list.length; i < len; i++) {
 	            var item = list[i];
 	            var icon = (item.n.length > 0 ? item.n.substring(0, 1) : 'H');
-	            var temp = "<li><div><a href='" + item.u + "' target='_blank'><b class='img'>" + icon + "</b><label>" + item.n + "</label></a></div></li>";
+	            var temp = "<li><div><a href='" + item.u + "' ><b class='img'>" + icon + "</b><label>" + item.n + "</label></a></div></li>";
 
 	            jF.append(temp);
 	        }
@@ -203,10 +203,10 @@
 <body class="home">
     <header>
         <div id="topbar">
-            <span id="left">@2024.2 由Horn.Studio开发</span>
-            <span id="right">版本号:<a  id="lang_23">1.36.0_Dev(2024年2月17日更新)</a></span>
+            <span id="left">@2024.3 由Horn.Studio开发</span>
+            <span id="right">版本号:<a  id="lang_23">1.37.0_Dev(2024年3月2日更新)</a></span>
         </div>
-        <h1>Horn.Search 简·搜</h1>
+        <h1>Horn.Search</h1>
         <h4></h4>
         <script>
 	    if(window.H5EXT){
